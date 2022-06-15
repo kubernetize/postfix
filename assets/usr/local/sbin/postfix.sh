@@ -8,4 +8,6 @@ done
 
 unset DOCKER_ENVSUBST_FILES
 
+/usr/libexec/postfix/post-install meta_directory=/etc/postfix create-missing
+
 exec /usr/libexec/postfix/master -i
