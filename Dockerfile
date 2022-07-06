@@ -1,9 +1,9 @@
-FROM alpine:3.16
+FROM ghcr.io/kubernetize/alpine-service-base
 
 LABEL maintainer="Richard Kojedzinszky <richard@kojedz.in>"
 
 RUN \
-    apk --no-cache add gettext postfix postfix-mysql postfix-pgsql
+    apk --no-cache add postfix postfix-mysql postfix-pgsql
 
 COPY assets/ /
 
